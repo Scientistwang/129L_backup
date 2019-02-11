@@ -4,12 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-data = np.fromfile('dataSet.npy')#import data
+data = np.load('dataSet.npy')#import data
 print(min(data),max(data)) #for test purposes
 
 #histogram
-nbins = 14
-bins = np.linspace(-400,+300,nbins+1)#get these numbers from trial
+nbins = 13
+bins = np.linspace(-5,+1.5,nbins+1)#get these numbers from trial
 fig,ax = plt.subplots()
 contents,binEdges,_, = ax.hist(np.log10(data),bins,histtype = 'stepfilled',log = True,color = 'b')
 
