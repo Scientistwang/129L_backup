@@ -28,6 +28,8 @@ for x_i in x:
 plt.plot(x,f_x,'b')
 plt.xlabel('x')
 plt.ylabel('f(x)')
+plt.title("Approximation of f(x) between [-3,15]")
+plt.xlim([-3,15])
 plt.show()
 	
 

@@ -1,0 +1,34 @@
+Excercise 1
+==========
+find /usr -size +50M
+
+Exercise 2
+==========
+du -sh /usr
+
+Exercise 3
+==========
+ls /etc | sort -rf
+
+Exercise 4
+===========
+Two ways of doing.
+
+First way, in two steps:
+  echo "hello world" > blah.txt
+  echo "bye bye" >> blah.txt
+
+Second way, in a single step
+  echo -e 'hello world \nbye bye' > blah.txt
+
+Note: \n is a special character ("newline").
+The leading backslash is to tell the system that this
+is a special characters.  
+
+Exercise 5
+===========
+cal 3 2022
+
+Exercise 6
+==========
+cal 3 2022 | colrm 1 3 | colrm 4 | grep [0-9]
