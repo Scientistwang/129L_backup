@@ -16,8 +16,8 @@ bins = np.linspace(0,24,nbins+1)#get these numbers from trial
 fig,ax = plt.subplots()
 contents,binEdges,_, = ax.hist(data,bins,log = True,color = 'b',rwidth = 0.85)
 
-cc.statBox(ax,data,binEdges)
-
+cc.statBox(ax,data,binEdges)# add cc's stat box
+#Fig config stuffs
 ax.set_xlim(binEdges[0],binEdges[-1])
 ax.set_xticks(binEdges,minor = True)
 ax.tick_params("both",direction = 'in')

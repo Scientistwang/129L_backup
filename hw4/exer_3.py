@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-#integral [2,4]dy[0,1]dx(x+2y)(x+y)
+#integral [2,4]dy[0,1]dx(x+2y)(x+y) using MC
+# Correct Value: 47
 import numpy as np
 N = 100000
 x = np.random.random(N)

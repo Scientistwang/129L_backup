@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # Zipeng Wang
 # 3909934
-
+# same integration but using Markov Chain MC
 import numpy as np
 
 #g(x,y) = (x+y)/7
