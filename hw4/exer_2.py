@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+#Zipeng Wang
+#3909934
+#Based on prof.C's genPoisson, plot the case where mean has some uncertainty
 import argparse
 import sys
 import math
