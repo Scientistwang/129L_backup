@@ -2,6 +2,7 @@
 #Zipeng Wang
 #3909934
 #read data from .npy file and plot a semilog histogram
+
 import ccHistStuff as cc
 import numpy as np
 import matplotlib.pyplot as plt
