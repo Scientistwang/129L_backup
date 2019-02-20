@@ -6,6 +6,7 @@ N = 101
 x = np.linspace(0,1,N) #L=1
 y = np.linspace(0,1,N)
 phi = np.zeros([N,N])
+print(phi.shape)
 #calculating phi
 for i in range(N):
 	for j in range(N):
