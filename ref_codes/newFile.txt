@@ -1,0 +1,8 @@
+blah blah again 
+A new line 
+An integer 36 then a float 34.120000 then a string blah 
+A float 34.120000
+A float with 8 decimal digits 34.12000000
+A float width 9    34.120
+A float width 9  1289.980
+Exponential = 1.289980e+03

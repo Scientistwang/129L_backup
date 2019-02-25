@@ -12,7 +12,7 @@ ypix = 400
 dx = 3.2/xpix  #step of x in range[-1,6,1.6] 
 dy = 2/ypix    #step of y in range[-1,1]
 
-c = complex(-0.79,0.56)
+c = complex(-0.79,0.156)
 pixColor = np.zeros((xpix,ypix),dtype="uint8")
 
 for ix in range(xpix):
