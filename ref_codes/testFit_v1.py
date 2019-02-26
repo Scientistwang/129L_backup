@@ -19,7 +19,6 @@ print(p)
 # The fit function is y = p[0]*x + p[1]
 # The answer will be
 # array([1.        , 0.03333333])
-
 # fit including errors gives slope<1, as expected.
 # Note the "w" parameter is the weight and needs to
 # be equal to 1/error
@@ -27,7 +26,6 @@ p = np.polyfit(x, y, degree, w=1./dy)
 print(p)
 # The answer will be
 # array([0.98      , 0.02909091])
-
 # Trying to retrieve covariance matrix gives error
 # on the numpy version installed on the rpi.
 # This error does not make sense to me and triggered a

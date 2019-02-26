@@ -162,6 +162,7 @@ for i0 in range(0, nscan):
 
 # "z" is a map of chisq-chisq_at_minimum
 # Correspond to the 68% 95% 99% coverage for 2 parameters
+
 # (PDG Table 38.2)
 CS = ax2.contour(p0, p1, z, [2.30, 5.99, 9.21])
 fmt = {}
