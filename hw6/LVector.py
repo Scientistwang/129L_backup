@@ -79,7 +79,7 @@ class LVector:
 	def phi(self):
 		return np.arctan(self.x[2]/self.x[1])	
 	def theta(self):
-		length_2D = self.x[1]**2+self.x[2]**2
+		length_2D = np.sqrt(self.x[1]**2+self.x[2]**2)
 		return np.arctan(length_2D/self.x[3])		
 
 	def eta(self):

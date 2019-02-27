@@ -20,7 +20,7 @@ image = ax.contour(x,y,phi,levels)
 fmt = {}
 for l,s in zip(levels,strs):
 	fmt[l]=s
-ax.clabel(image,inline = True, fmt=fmt, fontsize = 10)
+ax.clabel(image,inline = True, fmt=fmt, fontsize = 9)
 plt.xlabel('x-coordinate')
 plt.ylabel('y-coordinate')
 plt.title('pdf of a particle in 2D box')

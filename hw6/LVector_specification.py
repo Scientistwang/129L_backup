@@ -30,7 +30,6 @@ d = a - b
 cc   = 4*a    # scalar*vector gives a vector
 dd   = a*4    # this should be allowed and give same result as previous line
 blah = a*b    # "blah" is a number
-
 # square of a vector...
 foo = a.square()     # returns a*a
 
@@ -60,7 +59,8 @@ phi = a.phi()
 # the polar angle, ie, the angle between the "rvector" defined above and
 # the x3 axis (between 0 and pi)
 theta = a.theta()
-
+print('This is important')
+print(theta)
 # Pseudo-rapidity.  This is defined as -log( tan(theta/2) )
 eta = a.eta()
 

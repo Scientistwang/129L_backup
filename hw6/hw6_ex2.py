@@ -28,6 +28,7 @@ x = np.linspace(0,xlim,Nx+1) # pts on x-axis # limited to x>0
 x = np.delete(x,-1) #leave only 100 pts, on the left of each interval
 dx = xlim/Nx
 def g(x,y):
+	'''function being integrated'''
 	return np.exp(-(x+y))*(x+y)**N
 
 f_x = []# will contain pts in y-axis
@@ -42,9 +43,10 @@ for x_i in x:
 	for y_i in y:
 		sum_gy+=g(x_i,y_i)
 	f_x.append(sum_gy/Ny)
+
 #Normalize f_x 
 #assume that f(x) value after x=15 are negligible
-sum_f_x = sum(f_x)*dx
+sum_f_x = sum(f_x)*dx # area of the original integral
 for i in range(len(f_x)):
 	f_x[i] = f_x[i]/sum_f_x
 
@@ -56,6 +58,7 @@ for i in range(len(f_x)):
 	if area > 0.95:
 		break
 	area += f_x[i]*dx
+print(area)
 print('95% Bayesean Cl is',x[i])
 #about 3.7 for N = 1, mu = 3, sigma = 0.5
 #about 7.75 for N = 5, mu = 3, sigma = 0.5
