@@ -25,7 +25,7 @@ sigma   = args['sigma']
 xlim = 15
 
 S_set = np.linspace(0,15,300) #resonable values of S
-num_events = 300  #the "a bunch of numbers" from Possionan mean of S+B
+num_events = 500  #the "a bunch of numbers" from Possionan mean of S+B
 fraction_set = [] #the fraction of n s.t. n<N associated with each S in S_set 
 for S in S_set:
 	n_set = []
@@ -40,7 +40,7 @@ for S in S_set:
 	boolArray = n_set < N     #boolArray technique to calculate number of n s.t. n<N
 	fraction_set.append(sum(boolArray)/num_events)
 
-#print(fraction_set) # a good visualization of the decreasing fractions
+print(fraction_set) # a good visualization of the decreasing fractions
 exclu_S = [] #select those with a fraction < 0.05
 for i in range(len(fraction_set)):
 	if fraction_set[i]<0.05:

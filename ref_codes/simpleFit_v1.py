@@ -78,7 +78,7 @@ for iteration in range(niter):
     temp4 = np.matmul(temp3, At)     # 2x2 * 2xN = 2xN
     temp5 = np.matmul(temp4, W)      # 2xN * NxN = 2xN
     dpar  = np.matmul(temp5, dy)     # 2xN * Nx1 = 2x1 column vector
-
+    print(dpar)
     # the new values of the parameters
     p[0] = p[0] + dpar[0][0]
     p[1] = p[1] + dpar[1][0]

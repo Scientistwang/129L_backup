@@ -20,6 +20,11 @@ compareLogNormal.py
    except that the "massaged" Lognormal can never go
    negative.
 
+dampedOscillator.py
+   Use or scipy.integrate.odeint to solve the equation for a
+   forced damped oscillator (2nd order linear differential
+   equation)
+
 dataSet.npy
     A dataset consisting of a 1D numpy array saved in numpy format.
     This is to be used for Exercise 1 in Homework Set 4.
@@ -71,6 +76,11 @@ myTriangle.py
 
 plotGaussian.py
    Plots of gaussian, error function, one sided p-value to N(sigma)
+
+RC.py
+   Solution of Homework 5 Exercise 6 using prepackaged
+   code scipy.integrate.odeint to solve an ordinary 1st order
+   differential equation
 
 straightTracks.txt
    A text file needed for Exercises 1 and 3 in Homework 7
