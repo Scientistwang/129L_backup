@@ -72,7 +72,7 @@ for i in range(len(X0)):
     k2 = k2 + dpar[1][0]
     xf = xf + dpar[2][0]
     plot_sample = False
-    if i == 100 and plot_sample:
+    if i == 10 and plot_sample:
         #a nice graph showing the fitting curve
         fig0,ax0 = plt.subplots()
         plt.errorbar(x+x,y_all,yerr = y_err,fmt = 'o')
@@ -97,7 +97,8 @@ c1,b1,_, = ax1.hist(delta_x,bins, histtype = 'step',
                     color= 'b',label = 'Xf-X0')
 cc.statBox(ax1,delta_x,b1)
 plt.legend(loc = 'upper left')
-
+plt.xlabel('xf-x0')
+plt.ylabel('count')
 #plot pull
 fig2,ax2 = plt.subplots()
 low2,high2 = -40,40
@@ -107,6 +108,8 @@ c2,b2,_, = ax2.hist(pull,bins2, histtype = 'step',
                     color= 'r',label = 'pull')
 cc.statBox(ax2,pull,b2)
 plt.legend(loc='upper left')
+plt.xlabel('pull')
+plt.ylabel('count')
 
 plt.show()
 

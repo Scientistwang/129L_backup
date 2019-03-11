@@ -73,8 +73,8 @@ c3,b3,_, = ax2.hist((Xav-X0),bins,histtype = 'step',color = 'k',label = 'Xav-X0'
 cc.statBox(ax2,(Xav-X0),b1)
 ax2.set_xlim(b1[0],b1[-1])
 ax2.legend(loc = 'upper left')
-ax1.set_xlabel('X_fitted - X0[cm]')
-ax1.set_ylabel('count')
+ax2.set_xlabel('X_fitted - X0[cm]')
+ax2.set_ylabel('count')
 
 plt.show()
 

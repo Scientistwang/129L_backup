@@ -42,10 +42,10 @@ y0 = f(x,p[0],p[1])
 #inverse convariance matrix
 #sigma_i = sqrt(Ni)
 W = np.diag(1/N)
-#print(W.shape) #test
+#print(W) #test
 
 #iteration time
-niter = 4
+niter = 10
 #derivative of p[0] is np.exp(-p[1]*x)
 #derivative of p[1] is -x*p[0]*e^(-p[1]*x)
 for iteration in range(niter):
