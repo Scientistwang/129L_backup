@@ -11,6 +11,9 @@ ccHistStuff.py
    Utilities for histogram plotting.  At the moment implemented
    a stat box and putting error bars on a histogram.
 
+checkDecayChain.py
+   Needed to check the output of Homework 8, Exercise 2
+
 colorPicture.py
   An example of making an 8 bit color pixel map
 
@@ -46,6 +49,15 @@ exampleOfCommandInput.py
     Example of passing parameters and options to a python program
     from the command line
 
+fft.ipynb
+    Jupyter notebook for Fast Fourier Transfer example.
+    On the rpi you start the jupyter notebook with the
+    command
+    linux> jupyter-notebook
+    On my MAC I sstart with
+    mac> jupyter notebook
+    (Don't ask me why?)
+
 exampleOfZip.py
    zip is a useful way of aggregating iterables in a loop
 
@@ -55,10 +67,19 @@ genExponential.py
 genPoisson.py
    Example of generating and plotting a Poisson distribution
 
+histForMinuitFit.npz
+   Contains some data needed by maxLikFit.py
+
 LVector_specifications.py
    Exercise 1, Homework 6, asks for writing a Lorentz Vector class.
    This python file specifies the methods that are required (including
    their names)
+
+maxLikFit.py
+   Example of extended maximum likelihood fit with Minuit
+   Described in
+   http://hep.ucsb.edu/people/claudio/ph129-w19/ExtendedNLLExample.pdf
+   Needs to read data from histForMinuitFit.npz
 
 markovChain.py
    Example of how to generate random numbers using a Markov Chain.

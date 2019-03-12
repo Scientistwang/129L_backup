@@ -38,7 +38,7 @@ def dz_dt(z, t, b, w2):
 w2 = 4.
 
 # damping term
-b = 1
+b = 0.1
 
 # initial condition (amplitude and velocity)
 z0 = [0., 1.]
